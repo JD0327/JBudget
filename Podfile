@@ -10,6 +10,7 @@ target 'JDWallet' do
   pod "MJExtension"
   pod "YNCommonTools"
   pod "SDWebImage"
+  pod "DZNEmptyDataSet"
   pod "SDCycleScrollView"
 
 end

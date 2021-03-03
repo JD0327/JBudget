@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3830C61325EF37B0006F9508 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3830C61225EF37B0006F9508 /* BaseViewController.m */; };
+		3830C61825EF38C5006F9508 /* RealmManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3830C61725EF38C5006F9508 /* RealmManager.m */; };
+		3830C61D25EF3DB6006F9508 /* WalletHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3830C61C25EF3DB6006F9508 /* WalletHomeViewController.m */; };
+		3830C62025EF6268006F9508 /* WalletHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3830C61F25EF6268006F9508 /* WalletHomeHeaderView.m */; };
+		3830C62325EF69FB006F9508 /* CatetoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3830C62225EF69FB006F9508 /* CatetoryModel.m */; };
 		386954D825EE521A0053B801 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 386954D725EE521A0053B801 /* AppDelegate.m */; };
 		386954E325EE521C0053B801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386954E225EE521C0053B801 /* Assets.xcassets */; };
 		386954E625EE521C0053B801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386954E425EE521C0053B801 /* LaunchScreen.storyboard */; };
@@ -15,6 +20,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3830C61125EF37B0006F9508 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		3830C61225EF37B0006F9508 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		3830C61425EF3801006F9508 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3830C61625EF38C5006F9508 /* RealmManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmManager.h; sourceTree = "<group>"; };
+		3830C61725EF38C5006F9508 /* RealmManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmManager.m; sourceTree = "<group>"; };
+		3830C61925EF390D006F9508 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		3830C61B25EF3DB6006F9508 /* WalletHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletHomeViewController.h; sourceTree = "<group>"; };
+		3830C61C25EF3DB6006F9508 /* WalletHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletHomeViewController.m; sourceTree = "<group>"; };
+		3830C61E25EF6268006F9508 /* WalletHomeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletHomeHeaderView.h; sourceTree = "<group>"; };
+		3830C61F25EF6268006F9508 /* WalletHomeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletHomeHeaderView.m; sourceTree = "<group>"; };
+		3830C62125EF69FB006F9508 /* CatetoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatetoryModel.h; sourceTree = "<group>"; };
+		3830C62225EF69FB006F9508 /* CatetoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatetoryModel.m; sourceTree = "<group>"; };
+		3830C62725EF9906006F9508 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		386954D325EE521A0053B801 /* JDWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JDWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		386954D625EE521A0053B801 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		386954D725EE521A0053B801 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,12 +69,46 @@
 		3830C60E25EF300F006F9508 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3830C61925EF390D006F9508 /* Common.h */,
+				3830C62725EF9906006F9508 /* Config.h */,
+				3830C61425EF3801006F9508 /* PrefixHeader.pch */,
 				386954E225EE521C0053B801 /* Assets.xcassets */,
 				386954E425EE521C0053B801 /* LaunchScreen.storyboard */,
 				386954E725EE521C0053B801 /* Info.plist */,
 				386954E825EE521C0053B801 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3830C61025EF3792006F9508 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3830C61125EF37B0006F9508 /* BaseViewController.h */,
+				3830C61225EF37B0006F9508 /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3830C61525EF38AF006F9508 /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				3830C61625EF38C5006F9508 /* RealmManager.h */,
+				3830C61725EF38C5006F9508 /* RealmManager.m */,
+				3830C62125EF69FB006F9508 /* CatetoryModel.h */,
+				3830C62225EF69FB006F9508 /* CatetoryModel.m */,
+			);
+			path = RealmManager;
+			sourceTree = "<group>";
+		};
+		3830C61A25EF3D86006F9508 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3830C61B25EF3DB6006F9508 /* WalletHomeViewController.h */,
+				3830C61C25EF3DB6006F9508 /* WalletHomeViewController.m */,
+				3830C61E25EF6268006F9508 /* WalletHomeHeaderView.h */,
+				3830C61F25EF6268006F9508 /* WalletHomeHeaderView.m */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		386954CA25EE521A0053B801 = {
@@ -82,6 +134,9 @@
 			children = (
 				386954D625EE521A0053B801 /* AppDelegate.h */,
 				386954D725EE521A0053B801 /* AppDelegate.m */,
+				3830C61525EF38AF006F9508 /* RealmManager */,
+				3830C61025EF3792006F9508 /* Base */,
+				3830C61A25EF3D86006F9508 /* Home */,
 				3830C60E25EF300F006F9508 /* Supporting Files */,
 			);
 			path = JDWallet;
@@ -209,7 +264,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				386954D825EE521A0053B801 /* AppDelegate.m in Sources */,
+				3830C61D25EF3DB6006F9508 /* WalletHomeViewController.m in Sources */,
+				3830C61825EF38C5006F9508 /* RealmManager.m in Sources */,
+				3830C61325EF37B0006F9508 /* BaseViewController.m in Sources */,
 				386954E925EE521C0053B801 /* main.m in Sources */,
+				3830C62325EF69FB006F9508 /* CatetoryModel.m in Sources */,
+				3830C62025EF6268006F9508 /* WalletHomeHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +404,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6664853H9Q;
+				GCC_PREFIX_HEADER = JDWallet/PrefixHeader.pch;
 				INFOPLIST_FILE = JDWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,7 +424,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6664853H9Q;
+				GCC_PREFIX_HEADER = JDWallet/PrefixHeader.pch;
 				INFOPLIST_FILE = JDWallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

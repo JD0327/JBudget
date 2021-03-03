@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "WalletHomeViewController.h"
+#import "CatetoryModel.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = VC_BACKGROUND_COLOR;
+    self.window.rootViewController = [[RTRootNavigationController alloc] initWithRootViewController:[[WalletHomeViewController alloc] init]];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
