@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger, ObjectType) {
 
 + (RLMRealm *)defaultRealm;
 
-+ (BOOL)insertObjectWithObjects:(NSArray <RLMObject *>*)objcs withType:(ObjectType)type;
++ (void)insertObjectWithObjects:(NSArray <RLMObject *>*)objcs complete:(void(^)(NSError *error))complete;
 
 @end
 

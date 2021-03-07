@@ -13,7 +13,7 @@
 @property NSInteger catetoryId;
 @property NSString *catetoryName;
 @property NSString *catetoryIcon;
-@property float     catetoryBudget;
+@property double    catetoryBudget;
 
 - (NSInteger)incrementaId;
 

@@ -19,6 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
+    [YNRefreshConfig share].textColor = ColorMake(183, 183, 183);
+    [YNRefreshConfig share].loadingColor = ColorMake(183, 183, 183);
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = VC_BACKGROUND_COLOR;
     self.window.rootViewController = [[RTRootNavigationController alloc] initWithRootViewController:[[WalletHomeViewController alloc] init]];

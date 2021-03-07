@@ -11,7 +11,7 @@
 @implementation CatetoryModel
 
 - (NSInteger)incrementaId {
-    RLMResults *results = [CatetoryModel allObjectsInRealm:[RLMRealm realmWithURL:CATETORY_DATABASE]];
+    RLMResults *results = [CatetoryModel allObjectsInRealm:[RealmManager defaultRealm]];
     CatetoryModel *model = results.lastObject;
     if (!model) {
         return 1;

@@ -8,27 +8,29 @@
 
 #import "RealmManager.h"
 #import <Realm/Realm.h>
+#import "CatetoryModel.h"
+
+#define CATETORY_DATABASE [NSURL URLWithString:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"wallet.realm"]]
 
 @implementation RealmManager
 
 + (RLMRealm *)defaultRealm {
+    
     return [RLMRealm realmWithURL:CATETORY_DATABASE];
 }
 
-+ (BOOL)insertObjectWithObjects:(NSArray <RLMObject *>*)objcs withType:(ObjectType)type {
-    RLMRealm *realm;
-    if (type == ObjectTypeCatetory) {
-        realm = [RLMRealm realmWithURL:CATETORY_DATABASE];
-    }else if (type == ObjectTypeRecord) {
-        
-    }
++ (void)insertObjectWithObjects:(NSArray <RLMObject *>*)objcs complete:(nonnull void (^)(NSError * _Nullable))complete {
+    // 获取数据库
+    RLMRealm *realm = [RealmManager defaultRealm];
     [realm transactionWithBlock:^{
         for (RLMObject *obj in objcs) {
             [realm addObject:obj];
         }
         [realm commitWriteTransaction];
+        if (complete) {
+            complete(nil);
+        }
     }];
-    return NO;
 }
 
 @end

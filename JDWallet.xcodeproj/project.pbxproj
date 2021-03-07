@@ -17,6 +17,18 @@
 		386954E625EE521C0053B801 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386954E425EE521C0053B801 /* LaunchScreen.storyboard */; };
 		386954E925EE521C0053B801 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 386954E825EE521C0053B801 /* main.m */; };
 		6C2E50841BF5BE83B670D3D9 /* libPods-JDWallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA58C5CFFD042F704D315C9 /* libPods-JDWallet.a */; };
+		7207D89C25F4B4A00033EC84 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7207D89B25F4B4A00033EC84 /* Accelerate.framework */; };
+		7207D89F25F4B7070033EC84 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 7207D89E25F4B7070033EC84 /* back.png */; };
+		7207D8B025F4BB990033EC84 /* OCRAStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7207D8AF25F4BB990033EC84 /* OCRAStd.otf */; };
+		7207D8B325F4BCAD0033EC84 /* GothamRnd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7207D8B225F4BCAD0033EC84 /* GothamRnd-Medium.otf */; };
+		7207D8C325F4C0CB0033EC84 /* WalletHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7207D8C225F4C0CB0033EC84 /* WalletHomeTableViewCell.m */; };
+		7207D8C825F4C6A20033EC84 /* AddCatetoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7207D8C725F4C6A20033EC84 /* AddCatetoryViewController.m */; };
+		7207D8CD25F4CF340033EC84 /* SelectCatetoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7207D8CC25F4CF340033EC84 /* SelectCatetoryViewController.m */; };
+		7207D8D025F4D2C40033EC84 /* STHeiti-Medium.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 7207D8CF25F4D2C40033EC84 /* STHeiti-Medium.ttc */; };
+		7207D8D625F4E0AC0033EC84 /* AddRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7207D8D525F4E0AC0033EC84 /* AddRecordViewController.m */; };
+		7207D8DB25F4E2840033EC84 /* SelectCateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7207D8DA25F4E2840033EC84 /* SelectCateViewController.m */; };
+		7207D8DF25F4E4DB0033EC84 /* RecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7207D8DE25F4E4DB0033EC84 /* RecordModel.m */; };
+		7207D8E325F4E6080033EC84 /* WalletHomeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7207D8E225F4E6080033EC84 /* WalletHomeListModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +53,25 @@
 		386954E725EE521C0053B801 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		386954E825EE521C0053B801 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68AC842D90DD694A96E3CBB4 /* Pods-JDWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDWallet.release.xcconfig"; path = "Target Support Files/Pods-JDWallet/Pods-JDWallet.release.xcconfig"; sourceTree = "<group>"; };
+		7207D89B25F4B4A00033EC84 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7207D89E25F4B7070033EC84 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		7207D8AF25F4BB990033EC84 /* OCRAStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OCRAStd.otf; sourceTree = "<group>"; };
+		7207D8B225F4BCAD0033EC84 /* GothamRnd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamRnd-Medium.otf"; sourceTree = "<group>"; };
+		7207D8C125F4C0CB0033EC84 /* WalletHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletHomeTableViewCell.h; sourceTree = "<group>"; };
+		7207D8C225F4C0CB0033EC84 /* WalletHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletHomeTableViewCell.m; sourceTree = "<group>"; };
+		7207D8C625F4C6A20033EC84 /* AddCatetoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCatetoryViewController.h; sourceTree = "<group>"; };
+		7207D8C725F4C6A20033EC84 /* AddCatetoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCatetoryViewController.m; sourceTree = "<group>"; };
+		7207D8CB25F4CF340033EC84 /* SelectCatetoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectCatetoryViewController.h; sourceTree = "<group>"; };
+		7207D8CC25F4CF340033EC84 /* SelectCatetoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectCatetoryViewController.m; sourceTree = "<group>"; };
+		7207D8CF25F4D2C40033EC84 /* STHeiti-Medium.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "STHeiti-Medium.ttc"; sourceTree = "<group>"; };
+		7207D8D425F4E0AC0033EC84 /* AddRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddRecordViewController.h; sourceTree = "<group>"; };
+		7207D8D525F4E0AC0033EC84 /* AddRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddRecordViewController.m; sourceTree = "<group>"; };
+		7207D8D925F4E2840033EC84 /* SelectCateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectCateViewController.h; sourceTree = "<group>"; };
+		7207D8DA25F4E2840033EC84 /* SelectCateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectCateViewController.m; sourceTree = "<group>"; };
+		7207D8DD25F4E4DB0033EC84 /* RecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordModel.h; sourceTree = "<group>"; };
+		7207D8DE25F4E4DB0033EC84 /* RecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordModel.m; sourceTree = "<group>"; };
+		7207D8E125F4E6080033EC84 /* WalletHomeListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletHomeListModel.h; sourceTree = "<group>"; };
+		7207D8E225F4E6080033EC84 /* WalletHomeListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletHomeListModel.m; sourceTree = "<group>"; };
 		887853B3538D89280BE75A4B /* Pods-JDWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDWallet.debug.xcconfig"; path = "Target Support Files/Pods-JDWallet/Pods-JDWallet.debug.xcconfig"; sourceTree = "<group>"; };
 		9AA58C5CFFD042F704D315C9 /* libPods-JDWallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JDWallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -50,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7207D89C25F4B4A00033EC84 /* Accelerate.framework in Frameworks */,
 				6C2E50841BF5BE83B670D3D9 /* libPods-JDWallet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +101,10 @@
 		3830C60E25EF300F006F9508 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7207D8CF25F4D2C40033EC84 /* STHeiti-Medium.ttc */,
+				7207D8B225F4BCAD0033EC84 /* GothamRnd-Medium.otf */,
+				7207D8AF25F4BB990033EC84 /* OCRAStd.otf */,
+				7207D89E25F4B7070033EC84 /* back.png */,
 				3830C61925EF390D006F9508 /* Common.h */,
 				3830C62725EF9906006F9508 /* Config.h */,
 				3830C61425EF3801006F9508 /* PrefixHeader.pch */,
@@ -96,6 +132,8 @@
 				3830C61725EF38C5006F9508 /* RealmManager.m */,
 				3830C62125EF69FB006F9508 /* CatetoryModel.h */,
 				3830C62225EF69FB006F9508 /* CatetoryModel.m */,
+				7207D8DD25F4E4DB0033EC84 /* RecordModel.h */,
+				7207D8DE25F4E4DB0033EC84 /* RecordModel.m */,
 			);
 			path = RealmManager;
 			sourceTree = "<group>";
@@ -105,8 +143,12 @@
 			children = (
 				3830C61B25EF3DB6006F9508 /* WalletHomeViewController.h */,
 				3830C61C25EF3DB6006F9508 /* WalletHomeViewController.m */,
+				7207D8E125F4E6080033EC84 /* WalletHomeListModel.h */,
+				7207D8E225F4E6080033EC84 /* WalletHomeListModel.m */,
 				3830C61E25EF6268006F9508 /* WalletHomeHeaderView.h */,
 				3830C61F25EF6268006F9508 /* WalletHomeHeaderView.m */,
+				7207D8C125F4C0CB0033EC84 /* WalletHomeTableViewCell.h */,
+				7207D8C225F4C0CB0033EC84 /* WalletHomeTableViewCell.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -137,14 +179,39 @@
 				3830C61525EF38AF006F9508 /* RealmManager */,
 				3830C61025EF3792006F9508 /* Base */,
 				3830C61A25EF3D86006F9508 /* Home */,
+				7207D8C525F4C67F0033EC84 /* AddCatetory */,
+				7207D8D325F4E0910033EC84 /* Write */,
 				3830C60E25EF300F006F9508 /* Supporting Files */,
 			);
 			path = JDWallet;
 			sourceTree = "<group>";
 		};
+		7207D8C525F4C67F0033EC84 /* AddCatetory */ = {
+			isa = PBXGroup;
+			children = (
+				7207D8C625F4C6A20033EC84 /* AddCatetoryViewController.h */,
+				7207D8C725F4C6A20033EC84 /* AddCatetoryViewController.m */,
+				7207D8CB25F4CF340033EC84 /* SelectCatetoryViewController.h */,
+				7207D8CC25F4CF340033EC84 /* SelectCatetoryViewController.m */,
+			);
+			path = AddCatetory;
+			sourceTree = "<group>";
+		};
+		7207D8D325F4E0910033EC84 /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				7207D8D425F4E0AC0033EC84 /* AddRecordViewController.h */,
+				7207D8D525F4E0AC0033EC84 /* AddRecordViewController.m */,
+				7207D8D925F4E2840033EC84 /* SelectCateViewController.h */,
+				7207D8DA25F4E2840033EC84 /* SelectCateViewController.m */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
 		8B6EDED75A7E4BA484B47FFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7207D89B25F4B4A00033EC84 /* Accelerate.framework */,
 				9AA58C5CFFD042F704D315C9 /* libPods-JDWallet.a */,
 			);
 			name = Frameworks;
@@ -178,7 +245,7 @@
 		386954CB25EE521A0053B801 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = ext.jiayaning3;
 				TargetAttributes = {
 					386954D225EE521A0053B801 = {
@@ -209,7 +276,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7207D89F25F4B7070033EC84 /* back.png in Resources */,
+				7207D8D025F4D2C40033EC84 /* STHeiti-Medium.ttc in Resources */,
 				386954E625EE521C0053B801 /* LaunchScreen.storyboard in Resources */,
+				7207D8B025F4BB990033EC84 /* OCRAStd.otf in Resources */,
+				7207D8B325F4BCAD0033EC84 /* GothamRnd-Medium.otf in Resources */,
 				386954E325EE521C0053B801 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,11 +335,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				386954D825EE521A0053B801 /* AppDelegate.m in Sources */,
+				7207D8DB25F4E2840033EC84 /* SelectCateViewController.m in Sources */,
+				7207D8C325F4C0CB0033EC84 /* WalletHomeTableViewCell.m in Sources */,
 				3830C61D25EF3DB6006F9508 /* WalletHomeViewController.m in Sources */,
 				3830C61825EF38C5006F9508 /* RealmManager.m in Sources */,
 				3830C61325EF37B0006F9508 /* BaseViewController.m in Sources */,
 				386954E925EE521C0053B801 /* main.m in Sources */,
+				7207D8E325F4E6080033EC84 /* WalletHomeListModel.m in Sources */,
 				3830C62325EF69FB006F9508 /* CatetoryModel.m in Sources */,
+				7207D8CD25F4CF340033EC84 /* SelectCatetoryViewController.m in Sources */,
+				7207D8DF25F4E4DB0033EC84 /* RecordModel.m in Sources */,
+				7207D8D625F4E0AC0033EC84 /* AddRecordViewController.m in Sources */,
+				7207D8C825F4C6A20033EC84 /* AddCatetoryViewController.m in Sources */,
 				3830C62025EF6268006F9508 /* WalletHomeHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +391,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -371,6 +450,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -406,12 +486,12 @@
 				DEVELOPMENT_TEAM = 6664853H9Q;
 				GCC_PREFIX_HEADER = JDWallet/PrefixHeader.pch;
 				INFOPLIST_FILE = JDWallet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jiayaning.test.JDWallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiayaning.JDWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,12 +506,12 @@
 				DEVELOPMENT_TEAM = 6664853H9Q;
 				GCC_PREFIX_HEADER = JDWallet/PrefixHeader.pch;
 				INFOPLIST_FILE = JDWallet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jiayaning.test.JDWallet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiayaning.JDWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

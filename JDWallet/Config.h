@@ -9,6 +9,6 @@
 #ifndef Config_h
 #define Config_h
 
-#define CATETORY_DATABASE [NSURL URLWithString:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0] stringByAppendingPathComponent:@"wallet.realm"]] 
+#define AppFont(fontSize) [UIFont fontWithName:@"GothamRounded-Medium" size:fontSize]
 
 #endif /* Config_h */

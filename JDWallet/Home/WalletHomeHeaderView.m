@@ -52,20 +52,20 @@
         }];
         
         UILabel *label1 = [[UILabel alloc] init];
-        label1.text = @"剩余";
+        label1.text = @"LEFT";
         label1.textColor = ColorMake(153, 153, 153);
-        label1.font = [UIFont systemFontOfSize:12];
+        label1.font = AppFont(8);
         [contentView1 addSubview:label1];
         
         self.value1 = [[UILabel alloc] init];
         self.value1.text = @"0.00";
-        self.value1.font = [UIFont systemFontOfSize:16 weight:UIFontWeightMedium];
-        self.value1.textColor = ColorMake(15, 15, 15);
+        self.value1.font = AppFont(16);
+        self.value1.textColor = [UIColor whiteColor];
         [contentView1 addSubview:self.value1];
         
         [label1 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(contentView1.mas_top);
-            make.centerX.equalTo(contentView1.mas_centerX);
+            make.left.equalTo(self.value1.mas_left);
             make.height.equalTo(@(15));
         }];
         
@@ -85,20 +85,20 @@
         }];
         
         UILabel *label2 = [[UILabel alloc] init];
-        label2.text = @"已用";
+        label2.text = @"USED";
         label2.textColor = ColorMake(153, 153, 153);
-        label2.font = [UIFont systemFontOfSize:12];
+        label2.font = AppFont(12);
         [contentView2 addSubview:label2];
         
         self.value2 = [[UILabel alloc] init];
         self.value2.text = @"0.00";
-        self.value2.font = [UIFont systemFontOfSize:28 weight:UIFontWeightBold];
-        self.value2.textColor = ColorMake(15, 15, 15);
+        self.value2.font = AppFont(28);
+        self.value2.textColor = [UIColor whiteColor];
         [contentView2 addSubview:self.value2];
         
         [label2 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(contentView2.mas_top);
-            make.centerX.equalTo(contentView2.mas_centerX);
+            make.left.equalTo(self.value2.mas_left).offset(2);
             make.height.equalTo(@(15));
         }];
         
@@ -118,20 +118,20 @@
         }];
         
         UILabel *label3 = [[UILabel alloc] init];
-        label3.text = @"总预算";
+        label3.text = @"BUDGET";
         label3.textColor = ColorMake(153, 153, 153);
-        label3.font = [UIFont systemFontOfSize:12];
+        label3.font = AppFont(8);
         [contentView3 addSubview:label3];
         
         self.value3 = [[UILabel alloc] init];
         self.value3.text = @"0.00";
-        self.value3.font = [UIFont systemFontOfSize:16 weight:UIFontWeightMedium];
-        self.value3.textColor = ColorMake(15, 15, 15);
+        self.value3.font = AppFont(16);
+        self.value3.textColor = [UIColor whiteColor];
         [contentView3 addSubview:self.value3];
         
         [label3 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(contentView3.mas_top);
-            make.centerX.equalTo(contentView3.mas_centerX);
+            make.left.equalTo(self.value3.mas_left);
             make.height.equalTo(@(15));
         }];
         
@@ -140,8 +140,45 @@
             make.centerX.equalTo(view3.mas_centerX);
             make.bottom.equalTo(contentView3.mas_bottom);
         }];
+        
+        UIView *line = [[UIView alloc] init];
+        line.backgroundColor = ColorMake(80, 80, 80);
+        [self addSubview:line];
+        [line mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.left.right.equalTo(self);
+            make.height.equalTo(@(0.5));
+        }];
     }
     return self;
 }
 
+- (void)setBudgetValue:(double)budgetValue {
+    _budgetValue = budgetValue;
+    NSInteger compare = budgetValue;
+    if (budgetValue > compare) {
+        self.value3.text = [NSString stringWithFormat:@"%.2f",budgetValue];
+    }else {
+        self.value3.text = [NSString stringWithFormat:@"%.0f",budgetValue];
+    }
+}
+
+- (void)setYizhichu:(double)yizhichu {
+    _yizhichu = yizhichu;
+    NSInteger compare = yizhichu;
+    if (yizhichu > compare) {
+        self.value2.text = [NSString stringWithFormat:@"%.2f",yizhichu];
+    }else {
+        self.value2.text = [NSString stringWithFormat:@"%.0f",yizhichu];
+    }
+}
+
+- (void)setShengyu:(double)shengyu {
+    _shengyu = shengyu;
+    NSInteger compare = shengyu;
+    if (shengyu > compare) {
+        self.value1.text = [NSString stringWithFormat:@"%.2f",shengyu];
+    }else {
+        self.value1.text = [NSString stringWithFormat:@"%.0f",shengyu];
+    }
+}
 @end
